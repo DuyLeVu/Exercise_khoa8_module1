@@ -7,18 +7,19 @@
 <body>
     <script>
         let number = prompt('Type a number ');
-        if (number > 0) numberchange = 1;
-        else if (number == 0) numberchange = 0;
-            else if (number < 0) numberchange = -1;
-            else numberchange = null;
-        switch (numberchange){
+        // if (number > 0) numberchange = 1;
+        // else if (number == 0) numberchange = 0;
+        //     else if (number < 0) numberchange = -1;
+        //     else numberchange = null;
+        let check = number > 0 ? 'Positive' : number < 0 ? 'Negative' : 0;
+        switch (check){
             case 0:
                 alert(0);
                 break;
-            case 1:
+            case 'Positive':
                 alert(1);
                 break;
-            case -1:
+            case 'Negative':
                 alert(-1);
                 break;
             default: alert(0);
